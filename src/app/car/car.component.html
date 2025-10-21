@@ -1,0 +1,9 @@
+<h3>Wybierz rodzaj</h3>
+<select [(ngModel)]="choosenCategory">
+    @for (category of categories; track 0) {
+        <option>{{category}}</option>
+    }
+</select>
+
+<h3>Wybrany rodzaj: </h3>
+{{choosenCategory}}
