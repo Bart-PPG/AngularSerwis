@@ -5,5 +5,19 @@
     }
 </select>
 
-<h3>Wybrany rodzaj: </h3>
-{{choosenCategory}}
+<h3>Wybrany rodzaj: {{choosenCategory}} </h3>
+
+@for(car of cars; track 0){
+    @if (choosenCategory == car.category) {
+        <div 
+        [class.dostepne]="car.isAvailable"
+        [class.niedostepny]="!car.isAvailable">
+        <h4>Marka: {{car.brand}}</h4>
+        <p>Model: {{car.model}}</p>
+        <p>Cena: {{car.price}}</p>
+        <p>Kategoria: {{car.category}}</p>
+    </div>
+    }
+
+}
+

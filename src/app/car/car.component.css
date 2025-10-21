@@ -1,0 +1,12 @@
+.dostepne{
+    background-color: aqua;
+    width: 150px;
+    margin: 5px;
+    float: left;
+}
+.niedostepny{
+    background-color: lightgray;
+        width: 150px;
+    margin: 5px;
+    float: left;
+}
